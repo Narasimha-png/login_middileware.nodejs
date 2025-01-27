@@ -6,12 +6,11 @@ import cors from "cors" ;
 import { signToken , verifyToken } from "./Config/jwt.js";
 
 const App = express() ;
-
 const corsOptions = {
-    origin:true , 
-    methods:'GET , HEAD , PATCH , POST , DELETE ' , 
-    Credential:true 
-}
+    origin: 'http://localhost:1234', // Allow this specific origin
+    credentials: true,               // Allow credentials (cookies, etc.)
+  };
+
 App.use(cors(corsOptions)) ;
 
 dotenv.config() ;

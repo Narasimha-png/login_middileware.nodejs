@@ -4,6 +4,6 @@ import validateUser from "../Controllers/validateUser.js";
 const UserRouter = express.Router() ;
 
 UserRouter.post("/signup" , addNewUser ) ;
-UserRouter.get("/login" , validateUser )
+UserRouter.post("/login" , validateUser )
 
 export default UserRouter ;
