@@ -7,7 +7,7 @@ import { signToken , verifyToken } from "./Config/jwt.js";
 
 const App = express() ;
 const corsOptions = {
-    origin: 'http://localhost:1234', 
+    origin: 'https://authcatalog.netlify.app', 
     credentials: true,               
   };
 
