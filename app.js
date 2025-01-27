@@ -7,8 +7,8 @@ import { signToken , verifyToken } from "./Config/jwt.js";
 
 const App = express() ;
 const corsOptions = {
-    origin: 'http://localhost:1234', // Allow this specific origin
-    credentials: true,               // Allow credentials (cookies, etc.)
+    origin: 'http://localhost:1234', 
+    credentials: true,               
   };
 
 App.use(cors(corsOptions)) ;
