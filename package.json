@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "build": "echo \"No static build defined\"",
     "nodemon": "node app.js"
   },
   "keywords": [],
